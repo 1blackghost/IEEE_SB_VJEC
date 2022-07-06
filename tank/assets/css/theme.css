@@ -822,7 +822,7 @@ body:not(.tt-boxed) .tt-header-inner,
 	color: #FFF;
 }
 .tt-logo img {
-	max-height: 48px; /* You may need to change the img height to match your logo type! */
+	max-height: 45px; /* You may need to change the img height to match your logo type! */
 }
 
 .tt-logo-dark{
