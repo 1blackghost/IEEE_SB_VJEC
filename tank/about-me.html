@@ -8,11 +8,11 @@
 
 <html lang="en">
 	
-<!-- Mirrored from demo.themetorium.net/html/tank/blog-interactive.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Jul 2022 08:44:20 GMT -->
+<!-- Mirrored from demo.themetorium.net/html/tank/blog-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Jul 2022 08:44:23 GMT -->
 <head>
 
 		<!-- Title -->
-		<title>Portfolio Interactive | Tank - Creative Portfolio Showcase HTML Website Template by Themetorium</title>
+		<title>About Us | Vjec </title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -92,7 +92,7 @@
 
 			<!-- Begin noise background -->
 			<div class="bg-noise"></div>
-			<!-- End noise background --> 
+			<!-- End noise background -->
 
 
 			<!-- *****************************************
@@ -293,7 +293,7 @@
 
 															<!-- Begin submenu
 															=================== -->
-															<li class="tt-ol-submenu-wrap active">
+															<li class="tt-ol-submenu-wrap">
 																<div class="tt-ol-submenu-trigger">
 																	<a href="#" class="tt-ol-submenu-link">Blog List</a>
 																	<div class="tt-ol-submenu-caret-wrap">
@@ -303,7 +303,7 @@
 																<div class="tt-ol-submenu">
 																	<ul class="tt-ol-submenu-list">
 
-																		<li class="active"><a href="blog-interactive.html">Interactive List</a></li>
+																		<li><a href="blog-interactive.html">Interactive List</a></li>
 																		<li><a href="blog-list.html">Compact List</a></li>
 																		<li><a href="blog-classic.html">Classic List</a></li>
 																		<li><a href="blog-classic-sidebar.html">Classic Sidebar</a></li>
@@ -315,7 +315,7 @@
 
 															<!-- Begin submenu
 															=================== -->
-															<li class="tt-ol-submenu-wrap">
+															<li class="tt-ol-submenu-wrap active">
 																<div class="tt-ol-submenu-trigger">
 																	<a href="#" class="tt-ol-submenu-link">Blog Post</a>
 																	<div class="tt-ol-submenu-caret-wrap">
@@ -325,7 +325,7 @@
 																<div class="tt-ol-submenu">
 																	<ul class="tt-ol-submenu-list">
 
-																		<li><a href="blog-post.html">Single Post</a></li>
+																		<li class="active"><a href="blog-post.html">Single Post</a></li>
 																		<li><a href="blog-post-classic-sidebar.html">Classic Sidebar</a></li>
 																		
 																	</ul> <!-- /.tt-ol-submenu-list -->
@@ -393,6 +393,9 @@
 					<!-- ========================
 					///// Begin page header /////
 					============================= 
+					* ATENTION: This page header is slightly different from the default page header! 
+					It contains some extra elements and classec specifically for a blog post.
+					============================= 
 					* Use class "ph-full" to enable fullscreen size.
 					* Use class "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" or "ph-cap-xxlg" to set caption size (no class = default size).
 					* Use class "ph-center" to enable content center position.
@@ -404,16 +407,16 @@
 					* Use class "ph-content-parallax" to enable content parallax.
 					* Use class "ph-stroke" to enable caption title stroke style.
 					-->
-					<div id="page-header" class="ph-cap-lg ph-center ph-image-cropped ph-image-cover-4 ph-content-parallax">
-						<div class="page-header-inner tt-wrap">
+					<div id="page-header" class="ph-full ph-cap-sm ph-center ph-bg-image ph-image-shadow ph-image-cover-6 ph-content-parallax">
+						<div class="page-header-inner tt-wrap max-width-1400">
 
 							<!-- Begin page header image 
 							============================= -->
-							<!-- <div class="ph-image">
+							<div class="ph-image">
 								<div class="ph-image-inner">
-									<img src="assets/img/page-header/ph-2.jpg" alt="Image">
+									<img src="assets/img/vimal_jyothi.jpg" alt="Image">
 								</div>
-							</div> -->
+							</div>
 							<!-- End page header image -->
 
 							<!-- Begin page header caption
@@ -421,9 +424,19 @@
 							Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
 							-->
 							<div class="ph-caption">
-								<h1 class="ph-caption-title ph-appear">Blog</h1>
-								<div class="ph-caption-title-ghost ph-appear">Blog</div>
-								<div class="ph-caption-subtitle ph-appear">Articles &amp; News</div>
+								<div class="ph-categories ph-appear">
+									<a href="blog-archive.html" class="ph-category"></a>
+									<!-- <a href="blog-archive.html" class="ph-category">Uncategorized</a> -->
+								</div> <!-- /.ph-categories -->
+
+								<h2 class="ph-caption-title ph-appear">
+									VIMAL JYOTHI ENGINEERING COLLEGE,CHEMPERI
+								</h2> <!-- You can use <br class="hide-from-lg"> to break a text line if needed -->
+
+								<div class="ph-meta ph-appear">
+									<span class="ph-meta-published"></span>
+									<span class="ph-meta-posted-by"><a href="blog-archive.html" title="View all posts by John Doe"></a></span>
+								</div> <!-- /.ph-meta -->
 							</div> 
 							<!-- End page header caption -->
 
@@ -448,13 +461,37 @@
 
 						<!-- Begin made with love 
 						========================== -->
-						<div class="made-with-love ph-appear">
-							<div class="mwl-inner">
-								<div class="mwl-text">Made with</div>
-								<div class="mwl-icon"><i class="far fa-heart"></i></div>
-							</div>
-						</div>
+					
 						<!-- End made with love -->
+
+						<!-- Begin page header share (share buttons are for design purposes only!) 
+						============================= -->
+						<div class="ph-share">
+							<div class="ph-share-trigger ph-appear">
+								<div class="ph-share-text">Share</div>
+								<div class="ph-share-icon magnetic-item"><i class="fas fa-share-alt"></i></div>
+							</div> <!-- /.ph-share-trigger -->
+
+							<div class="ph-share-content">
+								<div class="ph-share-close cursor-close"><div class="bg-noise"></div></div>
+								<div class="ph-share-inner">
+									<h1 class="ph-share-title ph-share-appear">Spread the Word!</h1>
+									<div class="ph-share-subtitle ph-share-appear">Share this article with your friends</div>
+
+									<div class="social-buttons ph-share-appear">
+										<ul>
+											<li><a href="#0" class="magnetic-item" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#0" class="magnetic-item" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#0" class="magnetic-item" title="Share on Pinterest"><i class="fab fa-pinterest"></i></a></li>
+										</ul>
+									</div> <!-- /.social-buttons -->
+
+								</div> <!-- /.ph-share-inner -->
+
+								<div class="ph-share-ghost ph-share-appear">Share</div>
+							</div> <!-- /.ph-share-content -->
+						</div>
+						<!-- End page header share -->
 						
 					</div>
 					<!-- End page header -->
@@ -472,313 +509,81 @@
 						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 						-->
 						<div class="tt-section">
-							<div class="tt-section-inner tt-wrap">
+							<div class="tt-section-inner tt-wrap max-width-900">
 
-								<!-- Begin blog interactive 
-								=================================
-								* Use class "bi-borders" to enable borders.
-								-->
-								<div class="blog-interactive bi-borders">
+								<!-- Begin blog post 
+								===================== -->
+								<article class="tt-blog-post lightgallery">
 
-									<!-- Begin blog interactive item 
-									====================================== -->
-									<article class="blog-interactive-item anim-skewinup">
-										<a href="blog-post.html" class="bi-item-image">  <!-- if exist -->
-											<img src="assets/img/blog/list/blog-list-1.jpg" alt="image">
-										</a>
-										<div class="bi-item-categories">
-											<a href="blog-archive.html">Lifestyle</a>
-											<!-- <a href="blog-archive.html">Uncategorized</a> -->
+									<!-- Begin blog post content -->
+									<div class="tt-blog-post-content">
+
+										<h3>About Us:</h3>
+
+										<p>
+<a href="https://www.vjec.ac.in/" target="_blank" rel="noopener">Vimal Jyothi</a> 
+  Engineering College, Chemperi is a private self-financing engineering college coming under the Catholic Management with minority status, established in the year 2002 in the state of Kerala, managed by The Meshar Diocesan Educational Trust, Archbishop’s House, Thalassery. The college was established along the hill valley of Malabar and is currently one of the largest self-financing engineering colleges in Kerala. It is ISO 9001:2008 certified and is affiliated to the Kannur University.Today around 2000 students undertake their undergraduate and post graduate courses here, under the expertise of over 100 qualified faculty members and research guides.It was one of the most controversial and criticized project undertaken by archdiocese of Tellicherry at that time.</p>
+
+<h3>OUR MISSION</h3>
+
+<p>
+To prepare the students to see beyond geographical limit and belong to a new age of acquisition and application of technology to meet the challenges of the changing world.
+</p>
+<h3>OUR VISION</h3>
+</p>
+To bloom into a Center of Excellence for Technical Education and a pace-setter in rural India with its quality processes and procedures, interwoven with freedom of flexibility.
+</p>
+
+										<!-- Begin post image -->
+										<figure class="tt-blog-post-image">
+											<a href="assets/img/blog/single/blog-post-1.jpg" class="tt-bpi-link lg-trigger" data-exthumbnail="assets/img/vimal_front_view.jpg" data-cursor="View">
+												<img class="tt-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/vimal_front_view.jpg" alt="image">
+											</a>
+											<figcaption class="tt-bpi-caption">
+												Photo of  <a href="http://unsplash.com/" target="_blank" rel="noopener">Vimal Jyothi</a>
+											</figcaption>
+										</figure>
+										<!-- End post image -->
+
+										<p> Vimal Jyothi Engineering College (VJEC) is an educational project of the Archdiocese of Thallassery established in the year 2002 and is managed by Meshar Diocesan Educational Trust. The college is approved by AICTE and affiliated to APJ Abdul Kalam Technological University ( KTU). VJEC is a self-financing catholic minority institution aiming at generating a fervor for Engineering and Technology in students. Here we inspire, nurture and foster them to realize their career potential in the field of Engineering and Technology.
+
+
+
+</p>
+
+										<blockquote class="open-quote">
+											“A college degree is not a sign that one is a finished product but an indication a person is prepared for life.” 
+											<footer>Edward A Malloy</footer>
+										</blockquote>
+
+										<p>With profound insight into the resource requirements of the higher education system, VJEC has proudly set up world-class infrastructure complemented with intellectual capital in the form of competent faculty. Many of the facilities are way beyond the regulatory requirements aiming for learning beyond the syllabus to address the requirements of the industry. These material facilities along with value addition programs and student support systems are the integral facets of empowerment at VJEC.</p>
+
+										<br>
+
+										<h3>Vimal Jyothi</h3>
+
+										<p>Digital library, industry supported project labs, language lab, and student chapters of professional bodies such as IEEE, ISOI, IETE, SAE, CSI offer an extensive range of resources, opportunities and services to the outcome based teaching learning process. Effective implementation of quality control processes ensure Engineering graduates with the expected level of knowledge, skill and attitude.</p>
+
+										<!-- Begin tt-Embed (YouTube video) -->
+										<div class="tt-embed hide-cursor">
+											<iframe class="tt-embed-item" data-src="https://www.youtube.com/embed/7fCJwA1G1eA" allowfullscreen=""></iframe>
 										</div>
-										<h2 class="bi-item-title"><a href="blog-post.html">5 Surprising Techniques to Improve Your Creativity</a></h2>
-										<div class="bi-item-meta"> 
-											<span class="published">May 26, 2021</span>
-											<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-										</div>
-									</article>
-									<!-- End blog interactive item -->
+										<!-- End tt-Embed -->
 
-									<!-- Begin blog interactive item 
-									====================================== -->
-									<article class="blog-interactive-item anim-skewinup">
-										<a href="blog-post.html" class="bi-item-image">  <!-- if exist -->
-											<img src="assets/img/blog/list/blog-list-2.jpg" alt="image">
-										</a>
-										<div class="bi-item-categories">
-											<a href="blog-archive.html">Tutorials</a>
-											<!-- <a href="blog-archive.html">Uncategorized</a> -->
-										</div>
-										<h2 class="bi-item-title"><a href="blog-post.html">Avoid the Top 10 Mistakes Made by Beginners</a></h2>
-										<div class="bi-item-meta"> 
-											<span class="published">May 26, 2021</span>
-											<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-										</div>
-									</article>
-									<!-- End blog interactive item -->
+										<!-- Begin tt-Embed (Vimeo video) -->
+										<!-- <div class="tt-embed hide-cursor">
+											<iframe class="tt-embed-item" data-src="https://player.vimeo.com/video/78194687" allowfullscreen=""></iframe>
+										</div> -->
+										<!-- End tt-Embed -->
 
-									<!-- Begin blog interactive item 
-									====================================== -->
-									<article class="blog-interactive-item anim-skewinup">
-										<a href="blog-post.html" class="bi-item-image">  <!-- if exist -->
-											<img src="assets/img/blog/list/blog-list-3.jpg" alt="image">
-										</a>
-										<div class="bi-item-categories">
-											<a href="blog-archive.html">Lifestyle</a>
-											<!-- <a href="blog-archive.html">Uncategorized</a> -->
-										</div>
-										<h2 class="bi-item-title"><a href="blog-post.html">Why Some People Almost Always Save Money With This Method</a></h2>
-										<div class="bi-item-meta"> 
-											<span class="published">May 26, 2021</span>
-											<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-										</div>
-									</article>
-									<!-- End blog interactive item -->
-
-									<!-- Begin blog interactive item 
-									====================================== -->
-									<article class="blog-interactive-item anim-skewinup">
-										<a href="blog-post.html" class="bi-item-image">  <!-- if exist -->
-											<img src="assets/img/blog/list/blog-list-4.jpg" alt="image">
-										</a>
-										<div class="bi-item-categories">
-											<a href="blog-archive.html">Inspiration</a>
-											<!-- <a href="blog-archive.html">Uncategorized</a> -->
-										</div>
-										<h2 class="bi-item-title"><a href="blog-post.html">Want to Step Up Your Skills? You Need to Read This First</a></h2>
-										<div class="bi-item-meta"> 
-											<span class="published">May 26, 2021</span>
-											<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-										</div>
-									</article>
-									<!-- End blog interactive item -->
-
-									<!-- Begin blog interactive item 
-									====================================== -->
-									<article class="blog-interactive-item anim-skewinup">
-										<a href="blog-post.html" class="bi-item-image">  <!-- if exist -->
-											<img src="assets/img/blog/list/blog-list-5.jpg" alt="image">
-										</a>
-										<div class="bi-item-categories">
-											<a href="blog-archive.html">Tutorials</a>
-											<!-- <a href="blog-archive.html">Uncategorized</a> -->
-										</div>
-										<h2 class="bi-item-title"><a href="blog-post.html">Secrets to Getting Your Project to Complete Quickly and Efficiently</a></h2>
-										<div class="bi-item-meta"> 
-											<span class="published">May 26, 2021</span>
-											<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-										</div>
-									</article>
-									<!-- End blog interactive item -->
-
-								</div>
-								<!-- End blog interactive -->
-
-
-								<!-- Begin sliding sidebar 
-								=========================== 
-								* Use class "tt-ss-right" to align sidebar to right.
-								-->
-								<div class="tt-sliding-sidebar-wrap">
-									<div class="tt-sliding-sidebar">
-										<div class="tt-sliding-sidebar-inner">
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-search">
-												<h3 class="sidebar-heading">Search</h3>
-												
-												<!-- Begin form (Note: for design purposes only!)
-												================ 
-												* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
-												* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
-												-->
-												<form>
-													<div class="tt-form-btn-inside">
-														<input class="tt-form-control" type="text" id="search" placeholder="Type something & hit enter" required>
-														<button type="submit"><i class="fas fa-search"></i></button>
-													</div>
-												</form>
-												<!-- End form -->
-
-											</div> 
-											<!-- End sidebar widget -->
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-categories">
-												<h3 class="sidebar-heading">Categories</h3>
-												<ul class="list-unstyled">
-													<li><a href="blog-archive.html">Web Design <span title="Entries in this category">26</span></a></li>
-													<li><a href="blog-archive.html">Resources <span title="Entries in this category">12</span></a></li>
-													<li><a href="blog-archive.html">Tutorials <span title="Entries in this category">19</span></a></li>
-													<li><a href="blog-archive.html">Freebies <span title="Entries in this category">31</span></a></li>
-													<li><a href="blog-archive.html">Inspiration <span title="Entries in this category">67</span></a></li>
-												</ul>
-											</div>
-											<!-- End sidebar widget -->
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-post-list">
-												<!-- Can be "Recent Posts" or "Popular Posts" etc. -->
-												<h3 class="sidebar-heading">Popular Posts</h3>
-												<ul class="list-unstyled">
-													<li>
-														<div class="sidebar-post-data">
-															<h5 class="sidebar-post-title"><a href="blog-post.html">Why Some People Almost Always Save Money With This Method</a></h5>
-															<!-- <span class="sidebar-post-author">By: <a href="">John Doe</a></span> -->
-															<span class="sidebar-post-date">May 14, 2021</span>
-														</div>
-													</li>
-													<li>
-														<div class="sidebar-post-data">
-															<h5 class="sidebar-post-title"><a href="blog-post.html">Want to Step Up Your Skills? You Need to Read This First</a></h5>
-															<!-- <span class="sidebar-post-author">By: <a href="">John Doe</a></span> -->
-															<span class="sidebar-post-date">May 12, 2021</span>
-														</div>
-													</li>
-													<li>
-														<div class="sidebar-post-data">
-															<h5 class="sidebar-post-title"><a href="blog-post.html">Secrets to Getting Your Project to Complete Quickly and Efficiently</a></h5>
-															<!-- <span class="sidebar-post-author">By: <a href="">Henry Harrison</a></span> -->
-															<span class="sidebar-post-date">May 17, 2021</span>
-														</div>
-													</li>
-													<li>
-														<div class="sidebar-post-data">
-															<h5 class="sidebar-post-title"><a href="blog-post.html">How to Win Friends and Influence People?</a></h5>
-															<!-- <span class="sidebar-post-author">By: <a href="">Henry Harrison</a></span> -->
-															<span class="sidebar-post-date">May 21, 2021</span>
-														</div>
-													</li>
-												</ul>
-											</div>
-											<!-- End sidebar widget -->
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-comments-list">
-												<h3 class="sidebar-heading">Recent Comments</h3>
-												<ul class="list-unstyled">
-													<li class="sidebar-comment">
-														<div class="sidebar-comment-meta">
-															<div class="sidebar-comment-data">
-																<span class="sidebar-comment-author"><a href="#">John Doe</a></span>
-																<span class="sidebar-comment-date">May 14, 2021</span>
-															</div>
-														</div>
-														<div class="sidebar-comment-text">
-															<a href="#">Aliquet praesent tempor ac dolor aliquet. Risus mi vitae hendrerit orci vitae amet lacus tertis ...</a>
-														</div>
-													</li>
-
-													<li class="sidebar-comment">
-														<div class="sidebar-comment-meta">
-															<div class="sidebar-comment-data">
-																<span class="sidebar-comment-author"><a href="#">David Bradley</a></span>
-																<span class="sidebar-comment-date">May 14, 2021</span>
-															</div>
-														</div>
-														<div class="sidebar-comment-text">
-															<a href="#">Laculis molestie rhoncus. Amet maecenas ut orci id dui. Et dui morbi. Non mauris nautis trettis ...</a>
-														</div>
-													</li>
-
-													<li class="sidebar-comment">
-														<div class="sidebar-comment-meta">
-															<div class="sidebar-comment-data">
-																<span class="sidebar-comment-author"><a href="#">Kate Dixon</a></span>
-																<span class="sidebar-comment-date">May 14, 2021</span>
-															</div>
-														</div>
-														<div class="sidebar-comment-text">
-															<a href="#">Feugiat fringilla sequi. Anunc adipiscing nisl lorem morbi tincidunt gravida vistrim nocktac fitset ...</a>
-														</div>
-													</li>
-												</ul>
-											</div>
-											<!-- End sidebar widget -->
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-tags">
-												<h3 class="sidebar-heading">Tags</h3>
-												<div class="sidebar-tags-list">
-													<ul>
-														<li><a href="blog-archive.html">#portfolio</a></li>
-														<li><a href="blog-archive.html">#multipurpose</a></li>
-														<li><a href="blog-archive.html">#minimal</a></li>
-														<li><a href="blog-archive.html">#agency</a></li>
-														<li><a href="blog-archive.html">#creatives</a></li>
-														<li><a href="blog-archive.html">#freelancers</a></li>
-														<li><a href="blog-archive.html">#design</a></li>
-														<li><a href="blog-archive.html">#bootstrap</a></li>
-														<li><a href="blog-archive.html">#responsive</a></li>
-														<li><a href="blog-archive.html">#simple</a></li>
-														<li><a href="blog-archive.html">#creative</a></li>
-														<li><a href="blog-archive.html">#blog</a></li>
-														<li><a href="blog-archive.html">#wordpress</a></li>
-														<li><a href="blog-archive.html">#black &amp; white</a></li>
-													</ul>
-												</div> <!-- /.sidebar-tags-list -->
-											</div>
-											<!-- End sidebar widget -->
-
-											<!-- Begin sidebar widget -->
-											<div class="sidebar-widget sidebar-meta">
-												<h3 class="sidebar-heading">Meta</h3>
-												<ul class="list-unstyled">
-													<li><a href="#">Log In</a></li>
-													<li><a href="#">Entries RSS</a></li>
-													<li><a href="#">Comments RSS</a></li>
-													<li><a href="https://themetorium.net/" target="_blank" rel="noopener" class="tt-link">Themetorium.net</a></li>
-												</ul>
-											</div>
-											<!-- End sidebar widget -->
-
-										</div> <!-- /.tt-sliding-sidebar-inner -->
-									</div> <!-- /.tt-sliding-sidebar -->
-
-									<!-- Begin sliding sidebar trigger -->
-									<div class="tt-sliding-sidebar-trigger">
-										<span class="tt-ss-icon"><i class="fas fa-align-justify"></i></span>
-										<span class="tt-ss-icon-close"><i class="fas fa-times"></i></span>
 									</div>
-									<!-- End sliding sidebar trigger -->
+									<!-- End blog post content -->
 
-									<!-- Close overlay -->
-									<div class="tt-sliding-sidebar-close cursor-close"></div>
-
-								</div> 
-								<!-- End sliding sidebar -->
-
-
-								<!-- Begin tt-pagination 
-								========================= 
-								* Use class "tt-pagin-center" to align center.
-								-->
-								<div class="tt-pagination tt-pagin-center margin-top-xlg-100 anim-fadeinup">
-									<div class="tt-pagin-prev">
-										<a href="#" class="tt-pagin-item magnetic-item"><i class="fas fa-chevron-left"></i></a>
-									</div>
-									<div class="tt-pagin-numbers">
-										<a href="#0" class="tt-pagin-item magnetic-item active">1</a>
-										<a href="#" class="tt-pagin-item magnetic-item">2</a>
-										<a href="#" class="tt-pagin-item magnetic-item">3</a>
-										<a href="#" class="tt-pagin-item magnetic-item">4</a>
-									</div>
-									<div class="tt-pagin-next">
-										<a href="#" class="tt-pagin-item tt-pagin-next magnetic-item"><i class="fas fa-chevron-right"></i></a>
-									</div>
-								</div>
-								<!-- End tt-pagination -->
-
-							</div> <!-- /.tt-section-inner -->
-						</div>
-						<!-- End tt-section -->
-
-
-						<!-- =======================
-						///// Begin tt-section /////
-						============================ 
-						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
-						-->
-						<div class="tt-section padding-bottom-xlg-150">
+									<!-- Begin blog post tags -->
+								
+					
+							</div>
+													<div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
 							<div class="tt-section-inner tt-wrap">
 
 								<!-- Begin page nav 
@@ -787,16 +592,16 @@
 								* Use class "tt-pn-scroll" to enable hover title scroll. Note: If "tt-pn-hover-title" text is wider than "tt-pn-link" then it scrolls by default. The longer the text, the faster it scrolls.
 								-->
 								<div class="tt-page-nav tt-pn-scroll">
-									<a href="portfolio-grid-modern.html" class="tt-pn-link anim-fadeinup">
-										<div class="tt-pn-title">Portfolio</div>
-										<div class="tt-pn-hover-title">Portfolio</div>
+									<a href="https://www.vjec.ac.in/" class="tt-pn-link anim-fadeinup">
+										<div class="tt-pn-title">VJEC</div>
+										<div class="tt-pn-hover-title">Visit Here</div>
 									</a> <!-- /.tt-pn-link -->
 
-									<div class="tt-pn-subtitle anim-fadeinup">Selected Works</div>
+									<!-- <div class="tt-pn-subtitle anim-fadeinup">Selected Works</div> -->
 
 									<!-- Use if destination page contains page header image -->
 									<div class="tt-pn-image">
-										<img src="assets/img/page-header/ph-1.jpg" alt="image">
+										<img src="assets/img/vimal_jyothi.jpg" alt="image">
 									</div>
 								</div>
 								<!-- End page nav -->
@@ -808,77 +613,49 @@
 
 					</div>
 					<!-- End page content -->
-					
+														<footer id="tt-footer blue-footer">
+													<div class="tt-footer-inner">
 
-					<!-- ======================
-					///// Begin tt-footer /////
-					=========================== -->
-					<footer id="tt-footer">
-						<div class="tt-footer-inner">
+														<!-- Begin footer column 
+														========================= -->
+														<div class="footer-col tt-align-center-left">
+															<div class="footer-col-inner">
 
-							<!-- Begin footer column 
-							========================= -->
-							<div class="footer-col tt-align-center-left">
-								<div class="footer-col-inner">
+																<!-- You can use whatever button or link here -->
+																<div class="tt-btn tt-btn-link">
+																	<a href="#" class="scroll-to-top" data-hover="Back to top">Back to top</a>
+																</div>
 
-									<!-- You can use whatever button or link here -->
-									<div class="tt-btn tt-btn-link">
-										<a href="#" class="scroll-to-top" data-hover="Back to top">Back to top</a>
-									</div>
+															</div> <!-- /.footer-col-inner -->
+														</div>
+														<!-- Begin footer column -->
 
-								</div> <!-- /.footer-col-inner -->
-							</div>
-							<!-- Begin footer column -->
+														<!-- Begin footer column 
+														========================= -->
+														<div class="footer-col tt-align-center order-m-last">
+															<div class="footer-col-inner">
+																
+															</div> <!-- /.footer-col-inner -->
+														</div>
+														<!-- Begin footer column -->
 
-							<!-- Begin footer column 
-							========================= -->
-							<div class="footer-col tt-align-center order-m-last">
-								<div class="footer-col-inner">
+														<!-- Begin footer column 
+														========================= -->
+														<div class="footer-col tt-align-center-right">
+															<div class="footer-col-inner">
+																<!-- /.footer-social -->
+																<p style="font-size: small;">© Copyright 2022 IEEE – All rights reserved. Use of this website signifies your agreement to the IEEE Terms and Conditions.
+							A not-for-profit organization, IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
+															</div> <!-- /.footer-col-inner -->
+														</div>
+														<!-- Begin footer column -->
 
-									<div class="tt-copyright">
-										© Copyright - <a href="https://themetorium.net/" target="_blank" rel="noopener" class="tt-link">Themetorium.net</a>
-									</div>
-
-								</div> <!-- /.footer-col-inner -->
-							</div>
-							<!-- Begin footer column -->
-
-							<!-- Begin footer column 
-							========================= -->
-							<div class="footer-col tt-align-center-right">
-								<div class="footer-col-inner">
-
-									<div class="footer-social">
-										<div class="footer-social-text"><span>Follow</span><i class="fas fa-share-alt"></i></div>
-										<div class="social-buttons">
-											<ul>
-												<li><a href="https://www.facebook.com/themetorium" class="magnetic-item" target="_blank" rel="noopener">Fb.</a></li>
-												<li><a href="https://twitter.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Tw.</a></li>
-												<li><a href="https://www.youtube.com/" class="magnetic-item" target="_blank" rel="noopener">Yt.</a></li>
-												<li><a href="https://dribbble.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Dr.</a></li>
-												<li><a href="https://www.behance.net/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Be.</a></li>
-											</ul>
-										</div> <!-- /.social-buttons -->
-									</div> <!-- /.footer-social -->
-
-								</div> <!-- /.footer-col-inner -->
-							</div>
-							<!-- Begin footer column -->
-
-						</div> <!-- /.tt-section-inner -->
-					</footer>
-					<!-- End tt-footer -->
-
-
-				</div>
-				<!-- End content wrap -->
-
-			</div>
-			<!-- End scroll container -->
+													</div> <!-- /.tt-section-inner -->
+												</footer>
+												<!-- End tt-footer -->
 
 
 		</main>
-		<!-- End body inner -->
 
 
         
@@ -911,5 +688,5 @@
 	</body>
 
 
-<!-- Mirrored from demo.themetorium.net/html/tank/blog-interactive.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Jul 2022 08:44:23 GMT -->
+<!-- Mirrored from demo.themetorium.net/html/tank/blog-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Jul 2022 08:44:23 GMT -->
 </html>
