@@ -8,11 +8,11 @@
 
 <html lang="en">
 	
-<!-- Mirrored from demo.themetorium.net/html/tank/about-me.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Jul 2022 08:44:20 GMT -->
+<!-- Mirrored from demo.themetorium.net/html/tank/blog-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Jul 2022 08:44:23 GMT -->
 <head>
 
 		<!-- Title -->
-		<title>About Me | Tank - Creative Portfolio Showcase HTML Website Template by Themetorium</title>
+		<title>Blog Post | Tank - Creative Portfolio Showcase HTML Website Template by Themetorium</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
@@ -92,7 +92,7 @@
 
 			<!-- Begin noise background -->
 			<div class="bg-noise"></div>
-			<!-- End noise background --> 
+			<!-- End noise background -->
 
 
 			<!-- *****************************************
@@ -113,11 +113,7 @@
 							<!-- Begin logo 
 							================ -->
 							<div class="tt-logo"> 
-<<<<<<< HEAD
 								<a href="landing-page-2.html">
-=======
-								<a href="index.html">
->>>>>>> b2459412a82993d70f0b483d7bc9c5f5c4c138b8
 									<!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
 									<img src="assets/img/logo-light.png" class="tt-logo-light magnetic-item" alt="Logo"> <!-- logo light -->
 									<img src="assets/img/logo-dark.png" class="tt-logo-dark magnetic-item" alt="Logo"> <!-- logo dark -->
@@ -265,7 +261,7 @@
 
 												<!-- Begin submenu (submenu master)
 												==================================== -->
-												<li class="tt-ol-submenu-wrap active">
+												<li class="tt-ol-submenu-wrap">
 													<div class="tt-ol-submenu-trigger">
 														<a href="#">About</a>
 														<div class="tt-ol-submenu-caret-wrap">
@@ -276,7 +272,7 @@
 														<ul class="tt-ol-submenu-list">
 
 															<li><a href="about-us.html">About Us</a></li>
-															<li class="active"><a href="about-me.html">About Me</a></li>
+															<li><a href="about-me.html">About Me</a></li>
 
 														</ul> <!-- /.tt-ol-submenu-list -->
 													</div> <!-- /.tt-ol-submenu -->
@@ -285,7 +281,7 @@
 
 												<!-- Begin submenu (submenu master)
 												==================================== -->
-												<li class="tt-ol-submenu-wrap">
+												<li class="tt-ol-submenu-wrap active">
 													<div class="tt-ol-submenu-trigger">
 														<a href="#">Blog</a>
 														<div class="tt-ol-submenu-caret-wrap">
@@ -319,7 +315,7 @@
 
 															<!-- Begin submenu
 															=================== -->
-															<li class="tt-ol-submenu-wrap">
+															<li class="tt-ol-submenu-wrap active">
 																<div class="tt-ol-submenu-trigger">
 																	<a href="#" class="tt-ol-submenu-link">Blog Post</a>
 																	<div class="tt-ol-submenu-caret-wrap">
@@ -329,7 +325,7 @@
 																<div class="tt-ol-submenu">
 																	<ul class="tt-ol-submenu-list">
 
-																		<li><a href="blog-post.html">Single Post</a></li>
+																		<li class="active"><a href="blog-post.html">Single Post</a></li>
 																		<li><a href="blog-post-classic-sidebar.html">Classic Sidebar</a></li>
 																		
 																	</ul> <!-- /.tt-ol-submenu-list -->
@@ -397,6 +393,9 @@
 					<!-- ========================
 					///// Begin page header /////
 					============================= 
+					* ATENTION: This page header is slightly different from the default page header! 
+					It contains some extra elements and classec specifically for a blog post.
+					============================= 
 					* Use class "ph-full" to enable fullscreen size.
 					* Use class "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" or "ph-cap-xxlg" to set caption size (no class = default size).
 					* Use class "ph-center" to enable content center position.
@@ -408,14 +407,14 @@
 					* Use class "ph-content-parallax" to enable content parallax.
 					* Use class "ph-stroke" to enable caption title stroke style.
 					-->
-					<div id="page-header" class="ph-full ph-cap-xxlg ph-center ph-image-cropped ph-content-parallax">
-						<div class="page-header-inner tt-wrap">
+					<div id="page-header" class="ph-full ph-cap-sm ph-center ph-bg-image ph-image-shadow ph-image-cover-6 ph-content-parallax">
+						<div class="page-header-inner tt-wrap max-width-1400">
 
 							<!-- Begin page header image 
 							============================= -->
 							<div class="ph-image">
 								<div class="ph-image-inner">
-									<img src="assets/img/page-header/ph-5.jpg" alt="Image">
+									<img src="assets/img/page-header/blog-ph/blog-ph-1.jpg" alt="Image">
 								</div>
 							</div>
 							<!-- End page header image -->
@@ -425,9 +424,17 @@
 							Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
 							-->
 							<div class="ph-caption">
-								<h1 class="ph-caption-title ph-appear">About</h1>
-								<div class="ph-caption-title-ghost ph-appear">About</div>
-								<div class="ph-caption-subtitle ph-appear">Jonathan Morie</div>
+								<div class="ph-categories ph-appear">
+									<a href="blog-archive.html" class="ph-category">Lifestyle</a>
+									<!-- <a href="blog-archive.html" class="ph-category">Uncategorized</a> -->
+								</div> <!-- /.ph-categories -->
+
+								<h2 class="ph-caption-title ph-appear">Want to Step Up Your Skills? You Need to Read This First</h2> <!-- You can use <br class="hide-from-lg"> to break a text line if needed -->
+
+								<div class="ph-meta ph-appear">
+									<span class="ph-meta-published">May 26, 2021</span>
+									<span class="ph-meta-posted-by">by: <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
+								</div> <!-- /.ph-meta -->
 							</div> 
 							<!-- End page header caption -->
 
@@ -459,11 +466,40 @@
 							</div>
 						</div>
 						<!-- End made with love -->
+
+						<!-- Begin page header share (share buttons are for design purposes only!) 
+						============================= -->
+						<div class="ph-share">
+							<div class="ph-share-trigger ph-appear">
+								<div class="ph-share-text">Share</div>
+								<div class="ph-share-icon magnetic-item"><i class="fas fa-share-alt"></i></div>
+							</div> <!-- /.ph-share-trigger -->
+
+							<div class="ph-share-content">
+								<div class="ph-share-close cursor-close"><div class="bg-noise"></div></div>
+								<div class="ph-share-inner">
+									<h1 class="ph-share-title ph-share-appear">Spread the Word!</h1>
+									<div class="ph-share-subtitle ph-share-appear">Share this article with your friends</div>
+
+									<div class="social-buttons ph-share-appear">
+										<ul>
+											<li><a href="#0" class="magnetic-item" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#0" class="magnetic-item" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#0" class="magnetic-item" title="Share on Pinterest"><i class="fab fa-pinterest"></i></a></li>
+										</ul>
+									</div> <!-- /.social-buttons -->
+
+								</div> <!-- /.ph-share-inner -->
+
+								<div class="ph-share-ghost ph-share-appear">Share</div>
+							</div> <!-- /.ph-share-content -->
+						</div>
+						<!-- End page header share -->
 						
 					</div>
 					<!-- End page header -->
 
-					
+
 					<!-- *************************************
 					*********** Begin page content *********** 
 					************************************** -->
@@ -475,18 +511,452 @@
 						============================ 
 						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 						-->
-						<div class="tt-section padding-bottom-xlg-150">
+						<div class="tt-section">
 							<div class="tt-section-inner tt-wrap max-width-900">
 
-								<div class="text-xxlg font-alter text-gray-2">
-									<p class="anim-fadeinup">Hello, my name is <strong class="text-white">Jonathan Morie</strong>. Among going manor who did. Do ye is considered occasion directly. May ecstatic did surprise elegance the ignorant age. Own her miss cold. Creative Portfolio HTML Website Template. Demesne mention promise you justice arrived way if at simplicity do estimating.</p>
+								<!-- Begin blog post 
+								===================== -->
+								<article class="tt-blog-post lightgallery">
 
-									<p class="anim-fadeinup">Doubtful two bed way pleasure. Shew up ye away no eyes life or were this <a href="https://1.envato.market/tank" target="_blank" rel="noopener">modi architecto</a> Started on society an brought it explain. Position two saw greatest stronger design. Pianoforte if at simplicity do estimating. Debating me breeding be answered an he.</p>
+									<!-- Begin blog post content -->
+									<div class="tt-blog-post-content">
 
-									<p class="anim-fadeinup">Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face portfolio. Introduced imprudence see say unpleasing devonshire acceptance son widen noisy young.</p>
+										<h3>Heading</h3>
+
+										<p>Tank is a creative portfolio showcase HTML website template. Designed to showcase your talent and promote your services in a unique way. Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her business not collecting age. The properly agencies required mistaken outlived bed and. Remainder admitting neglected is he belonging.</p>
+
+										<p>Maids creative how learn drift but freelancers stand yet set. Smooth GSAP (TweenMax) animations. Piqued our sister shy nature almost his wicket. Hand dear so we hour to. He we be hastily influencers effects he service. Sympathize it <a href="https://1.envato.market/tank" target="_blank" rel="noopener">senectus nec ipsum</a> celebrated my pianoforte indulgence. Tank is extremely flexible showcase template. Elegance exercise as laughing proposal mistaken if. We up modern an it photography portfolio invitation.</p>
+
+										<!-- Begin post image -->
+										<figure class="tt-blog-post-image">
+											<a href="assets/img/blog/single/blog-post-1.jpg" class="tt-bpi-link lg-trigger" data-exthumbnail="assets/img/blog/single/thumb/img-4.jpg" data-cursor="View">
+												<img class="tt-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/single/blog-post-1.jpg" alt="image">
+											</a>
+											<figcaption class="tt-bpi-caption">
+												Photo by <a href="http://unsplash.com/" target="_blank" rel="noopener">Unsplash</a>
+											</figcaption>
+										</figure>
+										<!-- End post image -->
+
+										<p>Is at purse tried website china ready decay parallax. Small its shy way had woody downs power. To denoting admitted speaking learning my exercise so in. Procured shutters its feelings. To or three offer well commented am at. As dissuade cheerfully overcame so of friendly he indulged unpacked. Alteration connection to so as collecting me. Difficult in delivered extensive at direction allowance. Alteration put use diminution can be considered.</p>
+
+										<blockquote class="open-quote">
+											"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking."
+											<footer>Steve Jobs</footer>
+										</blockquote>
+
+										<p>Folly was these three and songs arose whose. Of in vicinity contempt together in possible branched. Assured company hastily looking garrets in oh. Most have love my gone to this so. Discovered interested prosperous the our affronting insipidity day. Missed lovers way one vanity wishes nay but. Use shy seemed within twenty wished old few regrets passed. Absolute one hastened mrs any sensible.</p>
+
+										<br>
+
+										<h3>Embed video</h3>
+
+										<p>Now indulgence dissimilar for his thoroughly has responsive. Agreement offending commanded my an. Change wholly say why eldest period. Are projection put celebrated particular unreserved joy unsatiable its? In then dare good am rose bred or. On am in nearer square wanted.</p>
+
+										<!-- Begin tt-Embed (YouTube video) -->
+										<div class="tt-embed hide-cursor">
+											<iframe class="tt-embed-item" data-src="https://www.youtube.com/embed/cJ_bnfIJpKM" allowfullscreen=""></iframe>
+										</div>
+										<!-- End tt-Embed -->
+
+										<!-- Begin tt-Embed (Vimeo video) -->
+										<!-- <div class="tt-embed hide-cursor">
+											<iframe class="tt-embed-item" data-src="https://player.vimeo.com/video/78194687" allowfullscreen=""></iframe>
+										</div> -->
+										<!-- End tt-Embed -->
+
+									</div>
+									<!-- End blog post content -->
+
+									<!-- Begin blog post tags -->
+									<div class="tt-blog-post-tags">
+										<ul>
+											<li><span>Tags:</span></li>
+											<li><a href="blog-archive.html">#photography</a></li> 
+											<li><a href="blog-archive.html">#travel</a></li>
+											<li><a href="blog-archive.html">#motion</a></li>
+										</ul>
+									</div>
+									<!-- End blog post tags -->
+
+									<!-- Begin blog post share (Note: for design purposes only!) 
+									=========================== 
+									* Use class "bss-fixed-bottom" to enable post share fixed bottom position (effect only on small screens!!!).
+									-->
+									<div class="tt-blog-post-share">
+										<div class="tt-bps-text">Share:</div>
+										<div class="social-buttons">
+											<ul>
+												<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+												<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+												<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Pinterest"><i class="fab fa-pinterest"></i></a></li>
+											</ul>
+										</div> <!-- /.social-buttons -->
+									</div>
+									<!-- End blog post share -->
+
+								</article> 
+								<!-- End blog post -->
+
+
+								<!-- Begin blog post nav 
+								======================== -->
+								<div class="tt-blog-post-nav">
+									<div class="tt-bp-nav-col tt-bp-nav-left">
+										<div class="tt-bp-nav-text"><span><i class="fas fa-angle-left"></i></span>Prew Post</div>
+										<h4 class="tt-bp-nav-title"><a href="#">Secrets to Getting Your Project to Complete Quickly and Efficiently</a></h4>
+									</div>
+									<div class="tt-bp-nav-col tt-bp-nav-right">
+										<div class="tt-bp-nav-text">Next Post<span><i class="fas fa-angle-right"></i></span></div>
+										<h4 class="tt-bp-nav-title"><a href="#">Why Some People Almost Always Save Money With This Method</a></h4>
+									</div>
 								</div>
+								<!-- End blog post nav -->
 
-								<img src="assets/img/signature.png" class="anim-fadeinup margin-top-30" alt="Signature">
+
+								<!-- Begin post comments 
+								========================= -->
+								<div id="tt-blog-post-comments">
+
+									<h4 class="tt-bpc-heading">5 comments:</h4>
+									
+									<!-- Begin tt-Comments list 
+									============================ -->
+									<ul class="tt-comments-list">
+
+										<!-- Begin tt-comment -->
+										<li class="tt-comment">
+											<a href="#" class="tt-comment-avatar">
+												<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
+											</a>
+											<div class="tt-comment-body">
+												<div class="tt-comment-meta">
+													<h4 class="tt-comment-heading"><a href="#">David Bradley</a></h4>
+													<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
+												</div>
+												<span class="tt-comment-reply"><a href="#">Reply</a></span>
+												<div class="tt-comment-text">
+													<p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may. Wicket do manner others seemed enable rather in. Excellent own discovery unfeeling.</p>
+												</div> <!-- /.tt-comment-text -->
+											</div> <!-- /.tt-comment-body -->
+										</li>
+										<!-- End tt-comment -->
+
+										<!-- Begin tt-comment -->
+										<li class="tt-comment">
+											<a href="#" class="tt-comment-avatar">
+												<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
+											</a>
+											<div class="tt-comment-body">
+												<div class="tt-comment-meta">
+													<h4 class="tt-comment-heading"><a href="#">Katie Ryan</a></h4>
+													<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
+												</div>
+												<span class="tt-comment-reply"><a href="#">Reply</a></span>
+												<div class="tt-comment-text">
+													<p>Unfeeling so rapturous discovery he exquisite. Reasonably so middletons or impression by terminated. Old pleasure required removing elegance him had. Down she bore sing saw calm high. Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+												</div> <!-- /.tt-comment-text -->
+
+												<!-- Begin tt comments list 
+												============================ -->
+												<ul class="tt-comments-list">
+
+													<!-- Begin tt-comment -->
+													<li class="tt-comment">
+														<a href="#" class="tt-comment-avatar">
+															<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
+														</a>
+														<div class="tt-comment-body">
+															<div class="tt-comment-meta">
+																<h4 class="tt-comment-heading"><a href="#">John Doe</a></h4>
+																<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
+															</div>
+															<span class="tt-comment-reply"><a href="#">Reply</a></span>
+															<div class="tt-comment-text">
+																<p>Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he. Could death since do we hoped is in. Exquisite no my attention extensive. The determine conveying moonlight age. Avoid for see marry sorry child.</p>
+															</div> <!-- /.tt-comment-text -->
+														</div> <!-- /.tt-comment-body -->
+													</li>
+													<!-- End tt-comment -->
+
+													<!-- Begin tt-comment -->
+													<li class="tt-comment">
+														<a href="#" class="tt-comment-avatar">
+															<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
+														</a>
+														<div class="tt-comment-body">
+															<div class="tt-comment-meta">
+																<h4 class="tt-comment-heading"><a href="#">Katie Ryan</a></h4>
+																<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
+															</div>
+															<span class="tt-comment-reply"><a href="#">Reply</a></span>
+															<div class="tt-comment-text">
+																<p>For norland produce age wishing. To figure on it spring season up. Her provision acuteness had excellent two why intention.</p>
+															</div> <!-- /.tt-comment-text -->
+														</div> <!-- /.tt-comment-body -->
+													</li>
+													<!-- End tt-comment -->
+
+												</ul>
+												<!-- End tt comments list -->
+
+											</div> <!-- /.tt-comment-body -->
+										</li>
+										<!-- End tt-comment -->
+
+										<!-- Begin tt-comment -->
+										<li class="tt-comment">
+											<a href="#" class="tt-comment-avatar">
+												<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
+											</a>
+											<div class="tt-comment-body">
+												<div class="tt-comment-meta">
+													<h4 class="tt-comment-heading"><a href="#">Kate Dixon</a></h4>
+													<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
+												</div>
+												<span class="tt-comment-reply"><a href="#">Reply</a></span>
+												<div class="tt-comment-text">
+													<p>Allow miles wound place the leave had. To sitting subject no improve studied limited. Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of.</p>
+												</div> <!-- /.tt-comment-text -->
+											</div> <!-- /.tt-comment-body -->
+										</li>
+										<!-- End tt-comment -->
+
+									</ul>
+									<!-- End tt-Comments list -->
+
+									<!-- Begin post comment form (Note: post comment form is for design purposes only!) 
+									============================= 
+									* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
+									* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
+									-->
+									<form id="tt-post-comment-form" class="tt-form-minimal anim-fadeinup">
+										<h4 class="tt-post-comment-form-heading">Leave a Comment:</h4>
+										<div class="tt-row">
+											<div class="tt-col-lg-6">
+
+												<div class="tt-form-group">
+													<label>Name <span class="required">*</span></label>
+													<input class="tt-form-control" id="84990245" type="text" placeholder="">
+												</div>
+
+											</div> <!-- /.col -->
+
+											<div class="tt-col-lg-6">
+
+												<div class="tt-form-group">
+													<label>Email address <span class="small text-gray">(Optional)</span></label>
+													<input class="tt-form-control" id="19833520" type="email" placeholder="">
+												</div>
+
+											</div> <!-- /.col -->
+										</div> <!-- /.row -->
+										
+										<div class="tt-form-group">
+											<label>Comment <span class="required">*</span></label>
+											<textarea class="tt-form-control" id="30945381" rows="6" placeholder=""></textarea>
+										</div>
+
+										<small class="tt-form-text">Fields marked with an asterisk (*) are required!</small>
+
+										<!-- Begin post comment reminder -->
+										<div class="tt-post-comment-reminder">
+											<div class="tt-form-check tt-form-check-inline">
+												<input type="checkbox" id="notify-me-new-comment">
+												<label for="notify-me-new-comment">Email me when this comment receives a reply.</label>
+											</div>
+											<div class="tt-form-check">
+												<input type="checkbox" id="notify-me-new-post">
+												<label for="notify-me-new-post">Notify me of new posts by email.</label>
+											</div>
+										</div>
+										<!-- End post comment reminder -->
+
+										<!-- Begin post comment submit button -->
+										<div class="tt-btn tt-btn-light-outline margin-top-40">
+											<button type="submit" data-hover="Post Comment">Post Comment</button>
+										</div>
+										<!-- End post comment submit button -->
+
+									</form>
+									<!-- End post comment form -->
+
+								</div>
+								<!-- End post comments -->
+
+
+								<!-- Begin sliding sidebar 
+								=========================== 
+								* Use class "tt-ss-right" to align sidebar to right.
+								-->
+								<div class="tt-sliding-sidebar-wrap">
+									<div class="tt-sliding-sidebar">
+										<div class="tt-sliding-sidebar-inner">
+
+											<!-- Begin sidebar widget -->
+											<div class="sidebar-widget sidebar-search">
+												<h3 class="sidebar-heading">Search</h3>
+												
+												<!-- Begin form (Note: for design purposes only!) 
+												================ 
+												* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
+												* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
+												-->
+												<form>
+													<div class="tt-form-btn-inside">
+														<input class="tt-form-control" type="text" id="search" placeholder="Type something & hit enter" required>
+														<button type="submit"><i class="fas fa-search"></i></button>
+													</div>
+												</form>
+												<!-- End form -->
+
+											</div> 
+											<!-- End sidebar widget -->
+
+											<!-- Begin sidebar widget -->
+											<div class="sidebar-widget sidebar-categories">
+												<h3 class="sidebar-heading">Categories</h3>
+												<ul class="list-unstyled">
+													<li><a href="blog-archive.html">Web Design <span title="Entries in this category">26</span></a></li>
+													<li><a href="blog-archive.html">Resources <span title="Entries in this category">12</span></a></li>
+													<li><a href="blog-archive.html">Tutorials <span title="Entries in this category">19</span></a></li>
+													<li><a href="blog-archive.html">Freebies <span title="Entries in this category">31</span></a></li>
+													<li><a href="blog-archive.html">Inspiration <span title="Entries in this category">67</span></a></li>
+												</ul>
+											</div>
+											<!-- End sidebar widget -->
+
+											<!-- Begin sidebar widget -->
+											<div class="sidebar-widget sidebar-post-list">
+												<!-- Can be "Recent Posts" or "Popular Posts" etc. -->
+												<h3 class="sidebar-heading">Popular Posts</h3>
+												<ul class="list-unstyled">
+													<li>
+														<div class="sidebar-post-data">
+															<h5 class="sidebar-post-title"><a href="#">Why Some People Almost Always Save Money With This Method</a></h5>
+															<!-- <span class="sidebar-post-author">By: <a href="">John Doe</a></span> -->
+															<span class="sidebar-post-date">May 14, 2021</span>
+														</div>
+													</li>
+													<li>
+														<div class="sidebar-post-data">
+															<h5 class="sidebar-post-title"><a href="#">Want to Step Up Your Skills? You Need to Read This First</a></h5>
+															<!-- <span class="sidebar-post-author">By: <a href="">John Doe</a></span> -->
+															<span class="sidebar-post-date">May 12, 2021</span>
+														</div>
+													</li>
+													<li>
+														<div class="sidebar-post-data">
+															<h5 class="sidebar-post-title"><a href="#">Secrets to Getting Your Project to Complete Quickly and Efficiently</a></h5>
+															<!-- <span class="sidebar-post-author">By: <a href="">Henry Harrison</a></span> -->
+															<span class="sidebar-post-date">May 17, 2021</span>
+														</div>
+													</li>
+													<li>
+														<div class="sidebar-post-data">
+															<h5 class="sidebar-post-title"><a href="#">How to Win Friends and Influence People?</a></h5>
+															<!-- <span class="sidebar-post-author">By: <a href="">Henry Harrison</a></span> -->
+															<span class="sidebar-post-date">May 21, 2021</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- End sidebar widget -->
+
+											<!-- Begin sidebar widget -->
+											<div class="sidebar-widget sidebar-comments-list">
+												<h3 class="sidebar-heading">Recent Comments</h3>
+												<ul class="list-unstyled">
+													<li class="sidebar-comment">
+														<div class="sidebar-comment-meta">
+															<div class="sidebar-comment-data">
+																<span class="sidebar-comment-author"><a href="#">John Doe</a></span>
+																<span class="sidebar-comment-date">May 14, 2021</span>
+															</div>
+														</div>
+														<div class="sidebar-comment-text">
+															<a href="#">Aliquet praesent tempor ac dolor aliquet. Risus mi vitae hendrerit orci vitae amet lacus tertis ...</a>
+														</div>
+													</li>
+
+													<li class="sidebar-comment">
+														<div class="sidebar-comment-meta">
+															<div class="sidebar-comment-data">
+																<span class="sidebar-comment-author"><a href="#">David Bradley</a></span>
+																<span class="sidebar-comment-date">May 14, 2021</span>
+															</div>
+														</div>
+														<div class="sidebar-comment-text">
+															<a href="#">Laculis molestie rhoncus. Amet maecenas ut orci id dui. Et dui morbi. Non mauris nautis trettis ...</a>
+														</div>
+													</li>
+
+													<li class="sidebar-comment">
+														<div class="sidebar-comment-meta">
+															<div class="sidebar-comment-data">
+																<span class="sidebar-comment-author"><a href="#">Kate Dixon</a></span>
+																<span class="sidebar-comment-date">May 14, 2021</span>
+															</div>
+														</div>
+														<div class="sidebar-comment-text">
+															<a href="#">Feugiat fringilla sequi. Anunc adipiscing nisl lorem morbi tincidunt gravida vistrim nocktac fitset ...</a>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- End sidebar widget -->
+
+											<!-- Begin sidebar widget -->
+											<div class="sidebar-widget sidebar-tags">
+												<h3 class="sidebar-heading">Tags</h3>
+												<div class="sidebar-tags-list">
+													<ul>
+														<li><a href="blog-archive.html">#portfolio</a></li>
+														<li><a href="blog-archive.html">#multipurpose</a></li>
+														<li><a href="blog-archive.html">#minimal</a></li>
+														<li><a href="blog-archive.html">#agency</a></li>
+														<li><a href="blog-archive.html">#creatives</a></li>
+														<li><a href="blog-archive.html">#freelancers</a></li>
+														<li><a href="blog-archive.html">#design</a></li>
+														<li><a href="blog-archive.html">#bootstrap</a></li>
+														<li><a href="blog-archive.html">#responsive</a></li>
+														<li><a href="blog-archive.html">#simple</a></li>
+														<li><a href="blog-archive.html">#creative</a></li>
+														<li><a href="blog-archive.html">#blog</a></li>
+														<li><a href="blog-archive.html">#wordpress</a></li>
+														<li><a href="blog-archive.html">#black &amp; white</a></li>
+													</ul>
+												</div> <!-- /.sidebar-tags-list -->
+											</div>
+											<!-- End sidebar widget -->
+
+											<!-- Begin sidebar widget -->
+											<div class="sidebar-widget sidebar-meta">
+												<h3 class="sidebar-heading">Meta</h3>
+												<ul class="list-unstyled">
+													<li><a href="#">Log In</a></li>
+													<li><a href="#">Entries RSS</a></li>
+													<li><a href="#">Comments RSS</a></li>
+													<li><a href="https://themetorium.net/" target="_blank" rel="noopener" class="tt-link">Themetorium.net</a></li>
+												</ul>
+											</div>
+											<!-- End sidebar widget -->
+
+										</div> <!-- /.tt-sliding-sidebar-inner -->
+									</div> <!-- /.tt-sliding-sidebar -->
+
+									<!-- Begin sliding sidebar trigger -->
+									<div class="tt-sliding-sidebar-trigger hide-cursor">
+										<span class="tt-ss-icon"><i class="fas fa-align-justify"></i></span>
+										<span class="tt-ss-icon-close"><i class="fas fa-times"></i></span>
+									</div>
+									<!-- End sliding sidebar trigger -->
+
+									<!-- Close overlay -->
+									<div class="tt-sliding-sidebar-close cursor-close"></div>
+
+								</div> 
+								<!-- End sliding sidebar -->
 
 							</div> <!-- /.tt-section-inner -->
 						</div>
@@ -528,7 +998,7 @@
 
 					</div>
 					<!-- End page content -->
-					
+
 
 					<!-- ======================
 					///// Begin tt-footer /////
@@ -631,5 +1101,5 @@
 	</body>
 
 
-<!-- Mirrored from demo.themetorium.net/html/tank/about-me.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Jul 2022 08:44:20 GMT -->
+<!-- Mirrored from demo.themetorium.net/html/tank/blog-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Jul 2022 08:44:23 GMT -->
 </html>
