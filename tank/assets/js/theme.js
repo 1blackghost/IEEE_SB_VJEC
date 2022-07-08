@@ -2835,7 +2835,7 @@
 	// ================================================================ 
  
 	// Append button
-	var $tt_demo_btn = '<a href="https://1.envato.market/tank" class="tt-demo-btn" target="_blank" rel="noopener"><div class="tt-demo-btn-img"><img src="https://stuff.themetorium.net/img/envato-logo-white.png" alt="Download!"></div><div class="tt-demo-btn-text">Buy This<br> Template!</div></a>';
+	var $tt_demo_btn = '';
 
 	$("#body-inner").append($tt_demo_btn);
 
