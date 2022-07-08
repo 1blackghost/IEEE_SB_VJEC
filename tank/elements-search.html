@@ -52,13 +52,61 @@
 		<link rel="stylesheet" href="assets/css/helper.css">
 		<link rel="stylesheet" href="assets/css/theme.css">
 		<script>
-			function f()
-			{
+			//This is cutom js function writen to search for items.
+			//Used some udayip for this to work..
+			
+			function f() {
+				let input = document.getElementById('search').value.toLowerCase();
+				input=input.toLowerCase();
+				if (input==""){
+					document.getElementById('closer').click();
+					document.getElementById("e2").style.display = "block";
+					document.getElementById("e2text").style.display = "block";
+					document.getElementById("e2img").style.display = "block";
+					document.getElementById("e1").style.display = "block";
+					document.getElementById("e1text").style.display = "block";
 
+				}
+				else{
+					
+					let x = document.getElementById('e1');
+					let x1 = document.getElementById('e1text');
+					let x2 = document.getElementById('e2');
+					let x3 = document.getElementById('e1text');
+					x=x.innerHTML.toLowerCase().includes(input);
+					x1=x1.innerHTML.toLowerCase().includes(input);
+					x2=x2.innerHTML.toLowerCase().includes(input);
+					x3=x3.innerHTML.toLowerCase().includes(input);
+					console.log("Triggered");
+					document.getElementById('closer').click();
+					document.getElementById('eve').innerHTML="Search Results...";
+					document.getElementById('searchTerm').innerHTML="Results Found!";
+					if ((x) || (x1)) {
+							document.getElementById("e2").style.display = "none";
+							document.getElementById("e2text").style.display = "none";
+							document.getElementById("e2img").style.display = "none";
+							document.getElementById("e1").style.display = "block";
+							document.getElementById("e1text").style.display = "block";
+					}
+					else if ((x2) || (x3)) {
+							document.getElementById("e1").style.display = "none";
+							document.getElementById("e1text").style.display = "none";
+							document.getElementById("e2").style.display = "block";
+							document.getElementById("e2text").style.display = "block";
+							document.getElementById("e2img").style.display = "block";
+					}
+					else {
+						document.getElementById('eve').innerHTML="No Results!";
+						document.getElementById('searchTerm').innerHTML="No Upcoming Events Found! Please Check The Keywords Entered";              
+						document.getElementById("e2").style.display = "none";
+						document.getElementById("e2text").style.display = "none";
+						document.getElementById("e2img").style.display = "none";
+						document.getElementById("e1").style.display = "none";
+						document.getElementById("e1text").style.display = "none";
+					}
+				}
 
-				console.log('helo there');
 			}
-	
 		</script>
 	</head>
 
@@ -311,7 +359,7 @@
 										</div> <!-- /.tt-search-inner -->
 
 										<div class="tt-search-ghost tt-search-appear">Latest Events</div>
-										<div class="tt-search-close-btn hide-cursor" title="Close"><i class="fas fa-times"></i></div>
+										<div class="tt-search-close-btn hide-cursor" id="closer" title="Close"><i class="fas fa-times"></i></div>
 									</div>
 									<!-- End tt-Search -->
 
@@ -366,7 +414,7 @@
 							<div class="ph-caption">
 								<h1 class="ph-caption-title ph-appear">Latest Events</h1>
 								<div class="ph-caption-title-ghost ph-appear">Latest Events</div>
-								<div class="ph-caption-subtitle ph-appear">Click The Search Icon to Search for Events.</div>
+								<div class="ph-caption-subtitle ph-appear" id="searchTerm">Click The Search Icon to Search for Events.</div>
 							</div> 
 							<!-- End page header caption -->
 
@@ -420,29 +468,29 @@
 									* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
 									-->
 									<div class="tt-heading tt-heading-lg">
-										<h3 class="tt-heading-subtitle text-gray">Upcoming Events</h3>
+										<h3 class="tt-heading-subtitle text-gray" id="eve" >Upcoming Events</h3>
 										<a href="https://1.envato.market/tank" target="_blank" rel="noopener">
-											<h2 class="tt-heading-title text-gray" rel="noopener">Womens Day Celebration</h2>
+											<h2 class="tt-heading-title text-gray" rel="noopener" id="e1">Womens Day Celebration</h2>
 										</a>
 										<!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
 									</div>
 									<!-- End tt-Heading -->
-
-									<p class="text-gray"><h3 class="tt-heading-subtitle text-gray">March 8 2022</h3>IEEE WIE VJEC celebrated women’s day on 8th march 2019. Mrs.Suraja Nair, Executive Engineer at Kerala Water Authority was the Chief guest for the occasion. Inaugration was done by lighting the lamp and it was followed by an inspirational talk by Ms.Suraja Nair. She inspired everyone by her motivational life story.</p>
-
+									<div id="e1text">
+									<p class="text-gray" ><h3 class="tt-heading-subtitle text-gray">March 8 2022</h3>IEEE WIE VJEC celebrated women’s day on 8th march 2019. Mrs.Suraja Nair, Executive Engineer at Kerala Water Authority was the Chief guest for the occasion. Inaugration was done by lighting the lamp and it was followed by an inspirational talk by Ms.Suraja Nair. She inspired everyone by her motivational life story.</p>
+									</div>
 
 
 									<br>
 									<div class="tt-heading tt-heading-lg">
 										<a href="https://1.envato.market/tank" target="_blank" rel="noopener">
-											<h2 class="tt-heading-title text-gray" rel="noopener">DLP</h2>
+											<h2 class="tt-heading-title text-gray" rel="noopener" id="e2">DLP</h2>
 										</a>
 										<!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
 									</div>
 									<!-- End tt-Heading -->
-
-									<p class="text-gray"><h3 class="tt-heading-subtitle text-gray">April 7 2022</h3>IEEE WIE VJEC celebrated women’s day on 8th march 2019. Mrs.Suraja Nair, Executive Engineer at Kerala Water Authority was the Chief guest for the occasion. Inaugration was done by lighting the lamp and it was followed by an inspirational talk by Ms.Suraja Nair. She inspired everyone by her motivational life story.</p>
-
+									<div id="e2text">
+									<p class="text-gray"><h3 class="tt-heading-subtitle text-gray">April 7 2022</h3>A DISTINGUISHED LECTURER PROGRAM was hosted by IEEE SB VJEC on 26th February 2019.The Chief Guest for the session was Dr.Vassilios G Agelidis, Professor, Technical University Denmark. He taught about importance of solar power plant and how to implement the solar plant. The three main points or 3 important factors we need to follow in our life is ‘Networking’, ‘Ask questions’, and ‘never give up’.</p>
+									</div>
 
 									<!-- Begin tt-image
 									====================
@@ -450,7 +498,7 @@
 									* Use class "anim-image-parallax" on <img> tag to enable parallax effect.
 									* Use class "margin-bottom-*" to enable bottom margins. For example "margin-bottom-40". More info about helper classes can be found in the file "helper.css".
 									-->
-									<div class="tt-image margin-bottom-40">
+									<div class="tt-image margin-bottom-40" id="e2img">
 										<figure>
 											<img class="anim-image-parallax tt-lazy" src="assets/img/vimal_jyothi.jpg" data-src="assets/img/vimal_jyothi.jpg" alt="image">
 											<figcaption>
