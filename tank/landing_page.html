@@ -282,14 +282,14 @@
 					* Use class "ph-content-parallax" to enable content parallax.
 					* Use class "ph-stroke" to enable caption title stroke style.
 					-->
-					<div id="page-header" class="ph-full ph-cap-sm ph-image-cropped ph-image-cover-3 ph-content-parallax">
-						<div class="page-header-inner tt-wrap">
+					<div id="page-header" class="ph-full ph-cap-sm ph-center ph-bg-image ph-image-shadow ph-image-cover-6 ph-content-parallax">
+						<div class="page-header-inner tt-wrap max-width-1400">
 
 							<!-- Begin page header image 
 							============================= -->
 							<div class="ph-image">
-								<div style="background-color: #131313;" class="ph-image-inner">
-									<img src="assets/img/page-header/project-ph/logo.png" alt="Image">
+								<div class="ph-image-inner">
+									<img src="assets/img/iee_hd.jpg" alt="Image">
 								</div>
 							</div>
 							<!-- End page header image -->
@@ -298,12 +298,20 @@
 							=============================== 
 							Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
 							-->
-							<div class="ph-caption max-width-1000">
-								<h1 class="ph-caption-title ph-appear font-normal"><em>IEEE SB VJEC</em></h1>
-								<div class="ph-caption-title-ghost ph-appear fontawesome-all">Hi,There!
+							<div class="ph-caption">
+								<div class="ph-categories ph-appear">
+									<a href="blog-archive.html" class="ph-category"></a>
+									<!-- <a href="blog-archive.html" class="ph-category">Uncategorized</a> -->
+								</div> <!-- /.ph-categories -->
 
-								</div>
-								<!-- <div class="ph-caption-subtitle ph-appear">Subtitle</div> -->
+								<h2 class="ph-caption-title ph-appear">
+									IEEE SB VJEC 
+								</h2> <!-- You can use <br class="hide-from-lg"> to break a text line if needed -->
+
+								<div class="ph-meta ph-appear">
+									<span class="ph-meta-published"></span>
+									<span class="ph-meta-posted-by"><a href="blog-archive.html" title="View all posts by John Doe"></a></span>
+								</div> <!-- /.ph-meta -->
 							</div> 
 							<!-- End page header caption -->
 
@@ -328,14 +336,39 @@
 
 						<!-- Begin made with love 
 						========================== -->
-
-						</div>
+					
 						<!-- End made with love -->
+
+						<!-- Begin page header share (share buttons are for design purposes only!) 
+						============================= -->
+						<div class="ph-share">
+							<div class="ph-share-trigger ph-appear">
+								<div class="ph-share-text">Share</div>
+								<div class="ph-share-icon magnetic-item"><i class="fas fa-share-alt"></i></div>
+							</div> <!-- /.ph-share-trigger -->
+
+							<div class="ph-share-content">
+								<div class="ph-share-close cursor-close"><div class="bg-noise"></div></div>
+								<div class="ph-share-inner">
+									<h1 class="ph-share-title ph-share-appear">Spread the Word!</h1>
+									<div class="ph-share-subtitle ph-share-appear">Share this article with your friends</div>
+
+									<div class="social-buttons ph-share-appear">
+										<ul>
+											<li><a href="#0" class="magnetic-item" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#0" class="magnetic-item" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#0" class="magnetic-item" title="Share on Pinterest"><i class="fab fa-pinterest"></i></a></li>
+										</ul>
+									</div> <!-- /.social-buttons -->
+
+								</div> <!-- /.ph-share-inner -->
+
+								<div class="ph-share-ghost ph-share-appear">Share</div>
+							</div> <!-- /.ph-share-content -->
+						</div>
+						<!-- End page header share -->
 						
 					</div>
-					<!-- End page header -->
-
-
 					<!-- *************************************
 					*********** Begin page content *********** 
 					************************************** -->
